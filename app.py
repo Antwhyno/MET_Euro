@@ -94,4 +94,5 @@ with ui.column().classes('w-full max-w-6xl mx-auto py-20 px-6 font-sans').props(
 with ui.row().classes('w-full p-8 bg-[#1a1a1a] text-center justify-center font-sans mt-10'):
     ui.label('Exposition of the MET • Antoine').classes('text-gray-400')
 
-ui.run(title="The MET - Exposition", favicon="🏛️")
+# On ajoute le host et le port spécifique pour Hugging Face
+ui.run(title="The MET - Exposition", favicon="🏛️", host="0.0.0.0", port=7860)

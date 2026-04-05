@@ -3,6 +3,14 @@
 exploser sur le MET Metropolitain museum of art
 utiliser streamlit et Nice gui pour mettre sous forme de site web (streamlit).
 
+**A FAIRE :**
+- touches pour naviguer entre les diapos, juste pour descendre d'un écran
+- images mettre pour chaque diapo
+- synthetiser le texte
+- mettre la derniere page pour les sources
+- changer les liens qui ne vont pas
+- mettre des animations legeres
+
 Voila l'architecture:
 
 📁 TonProjetPortfolio/

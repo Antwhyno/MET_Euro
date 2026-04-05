@@ -65,7 +65,7 @@ with ui.column().classes('w-full bg-[#f4f1ea] py-20 px-6 font-sans'):
                 ui.label("The museum expanded and moved to its current iconic location at Fifth Avenue and 82nd Street, next to beautiful Central Park.").classes('text-gray-800 mt-2')
 
 # Media Section             ###
-with ui.column().classes('h-screen max-w-6xl mx-auto py-20 px-6 font-sans').props('id=media'):
+with ui.column().classes('w-full max-w-6xl mx-auto py-20 px-6 font-sans').props('id=media'):
     ui.label('Explore Further').classes('text-4xl font-bold mb-12 text-center w-full uppercase tracking-widest text-[#8b0000] font-serif')
     
     with ui.row().classes('w-full flex-wrap justify-center gap-12'):

@@ -17,5 +17,8 @@ def page_principale():
     creer_menu()
     page_1.dessiner_page()
 
+    ui.separator()
+    page_2.dessiner_page()
+    
 # 4. On lance le moteur (avec les réglages Hugging Face prêts au cas où)
 ui.run(title="MET", host="0.0.0.0", port=7860)

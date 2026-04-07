@@ -2,39 +2,39 @@
 
 exploser sur le MET Metropolitain museum of art
 utiliser streamlit et Nice gui pour mettre sous forme de site web (streamlit).
-
+inallement pas de streamlit car imcompatible avec le deployement
 **A FAIRE :**
 - touches pour naviguer entre les diapos, juste pour descendre d'un écran
 - images mettre pour chaque diapo
 - synthetiser le texte
 - mettre la derniere page pour les sources
 - changer les liens qui ne vont pas
-- mettre des animations legeres
+- mettre des animations legeres (si possible)
 
 Voila l'architecture:
 
-📁 TonProjetPortfolio/
+📁 MET_Euro/
 │
 ├── 📄 main.py                <-- Le chef d'orchestre (Le menu)
 
 
 ├── 📄 requirements.txt       <-- La liste des outils (nicegui)
 │
+|   📄 README.md
 
 ├── 📁 pages/                 <-- Le dossier qui contient tes pages web
 │   
-    ├── 📄 accueil.py         <-- Ta page de présentation
+    ├── 📄 page_1.py         <-- Ta page de présentation
 │   
-    ├── 📄 experiences.py     <-- Ta page avec ton CV / tes stages
+    ├── 📄 page_2.py     <-- Ta page avec ton CV / tes stages
 │   
-    └── 📄 projets.py         <-- Ta page qui montre tes créations (ex: Concorde)
+    └── 📄 page_3.py         <-- Ta page qui montre tes créations (ex: Concorde)
 │
 └── 📁 assets/                <-- Le dossier pour tes fichiers médias
     
-    ├── 🖼️ photo_profil.jpg
-    └── 🖼️ logo_lycee.png
+    ├── 🖼️ met_hero.png
+    └── 🖼️ location.png
 
-Merci gemini prowww
 
 ## Deployment sur Hugging Face:
 
@@ -97,4 +97,6 @@ Le statut passera à "Building" (en jaune). Le serveur installe Python et lit to
 
 S'il n'y a pas d'erreur, le statut passera à "Running" (en vert).
 
-Ton site va apparaître au centre de l'écran ! Tu auras un lien définitif (du style https://tonpseudo-met-exposition.hf.space) que tu pourras envoyer à ton prof ou mettre sur ton CV !
+Ton site va apparaître au centre de l'écran ! Tu auras un lien définitif (du style https://tonpseudo-met-exposition.hf.space) que tu pourras envoyer à ton prof ou mettre ton cloud !
+
+Merci gemini prowww

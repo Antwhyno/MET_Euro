@@ -5,10 +5,10 @@ from pages import page_1, page_2
 def creer_menu():
     # 1. On crée le menu qui restera accroché en haut de l'écran pendant qu'on descend
     with ui.header().classes('bg-slate-900 justify-between items-center p-4'):
-        ui.label('Mon Projet Artistique').classes('text-xl font-bold')
+        ui.label('The MET').classes('text-xl font-bold')
         with ui.row():
             ui.link('Accueil', '/').classes('hover:text-blue-400')
-            ui.link('Le Projet', '/projet').classes('hover:text-blue-400')
+            ui.link('MET', '/projet').classes('hover:text-blue-400')
             ui.link('Conclusion', '/conclusion').classes('hover:text-blue-400')
 
 # 3. La page d'accueil (qui va tout empiler)
@@ -21,4 +21,4 @@ def page_principale():
     page_2.dessiner_page()
 
 # 4. On lance le moteur (avec les réglages Hugging Face prêts au cas où)
-ui.run(title="MET", host="0.0.0.0", port=7860, reload=True)
+ui.run(title="The MET by Antoine", host="0.0.0.0", port=7860, reload=True)

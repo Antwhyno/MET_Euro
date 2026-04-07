@@ -1,7 +1,7 @@
 # chef d'orchestre
 from nicegui import ui
 
-from pages import page_1
+from pages import page_1, page_2
 def creer_menu():
     # 1. On crée le menu qui restera accroché en haut de l'écran pendant qu'on descend
     with ui.header().classes('bg-slate-900 justify-between items-center p-4'):
@@ -19,6 +19,6 @@ def page_principale():
 
     ui.separator()
     page_2.dessiner_page()
-    
+
 # 4. On lance le moteur (avec les réglages Hugging Face prêts au cas où)
 ui.run(title="MET", host="0.0.0.0", port=7860)

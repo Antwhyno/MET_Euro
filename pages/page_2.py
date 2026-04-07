@@ -1,4 +1,4 @@
-from nicegui import ui
+from nicegui import ui, app
 
 # 1. On crée le "pont" entre Python et le dossier assets
 app.add_static_files('/assets', 'assets')

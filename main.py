@@ -21,4 +21,4 @@ def page_principale():
     page_2.dessiner_page()
 
 # 4. On lance le moteur (avec les réglages Hugging Face prêts au cas où)
-ui.run(title="MET", host="0.0.0.0", port=7860)
+ui.run(title="MET", host="0.0.0.0", port=7860, reload=True)

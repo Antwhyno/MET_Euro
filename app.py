@@ -35,13 +35,9 @@ with ui.row().classes('w-full items-center justify-between p-4 bg-white shadow-m
 ui.element('div').classes('h-16')
 
 # Hero Section
-with ui.element('div').classes('w-full relative overflow-hidden flex items-center justify-center').style('height: 70vh;'):
-    ui.image('assets/met_hero.png').style('position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;')
-    with ui.element('div').style('position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 2;'):
-        pass
-    with ui.column().classes('relative z-10 items-center text-center p-8').style('max-width: 900px;'):
-        ui.label('The Metropolitan Museum of Art').classes('text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-2xl')
-        ui.label('One of the biggest museums in the world, presenting over 5,000 years of art.').classes('text-xl md:text-3xl text-gray-200 drop-shadow-lg font-sans')
+with ui.column().classes('w-full items-center justify-center bg-[#fdfbf7]').style('height: calc(100vh - 64px); padding: 2rem;'):
+    ui.image('assets/MET_premiere.jpg').classes('w-full max-w-5xl rounded-3xl shadow-2xl').style('max-height: 45%; object-fit: contain;')
+    ui.image('assets/location.png').classes('w-full max-w-5xl rounded-3xl shadow-2xl mt-8').style('max-height: 45%; object-fit: contain;')
 
 # Presentation Section
 with ui.column().classes('w-full max-w-6xl mx-auto py-20 px-6').props('id=presentation'):

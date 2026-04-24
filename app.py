@@ -4,7 +4,24 @@ from nicegui import app, ui
 app.add_static_files('/assets', 'assets')
 
 # Background color and fonts using generic CSS in nicegui
-ui.add_head_html('<style>html { scroll-behavior: smooth; } body { background-color: #fdfbf7; color: #1a1a1a; font-family: "Georgia", serif; margin: 0; padding: 0; }</style>')
+ui.add_head_html("""
+<style>html { scroll-behavior: smooth; } body { background-color: #fdfbf7; color: #1a1a1a; font-family: "Georgia", serif; margin: 0; padding: 0; }</style>
+<script>
+document.addEventListener('keydown', function(event) {
+    if (['Shift', 'Control', 'Alt', 'Meta'].includes(event.key)) return;
+    
+    if (event.key === 'ArrowUp' || event.key === 'PageUp') {
+        event.preventDefault();
+        window.scrollBy({ top: -window.innerHeight, behavior: 'smooth' });
+    } else {
+        if (event.key === 'ArrowDown' || event.key === 'PageDown' || event.key === ' ') {
+            event.preventDefault();
+        }
+        window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+    }
+});
+</script>
+""")
 
 # Navigation / Header
 with ui.row().classes('w-full items-center justify-between p-4 bg-white shadow-md fixed z-50 top-0 left-0 right-0'):

@@ -3,6 +3,7 @@ from pages.hero import render_hero
 from pages.presentation import render_presentation
 from pages.history import render_history
 from pages.media import render_media
+from pages.ranking import render_ranking
 
 # Configure page
 app.add_static_files('/assets', 'assets')
@@ -43,6 +44,9 @@ render_hero()
 
 # Presentation Section
 render_presentation()
+
+# Global Ranking Section
+render_ranking()
 
 # History Section
 render_history()

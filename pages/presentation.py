@@ -16,10 +16,3 @@ def render_presentation():
             stats_card('Rooms', '280', 'meeting_room')
             stats_card('Artworks', '2 M+', 'brush')
             stats_card('Years of Art', '5,000+', 'history_toggle_off')
-    
-        with ui.card().classes('w-full mt-16 p-10 bg-white shadow-2xl rounded-3xl flex flex-col md:flex-row items-center gap-10'):
-            ui.icon('location_city').classes('text-[100px] text-gray-300 hidden md:block')
-            with ui.column().classes('flex-1 font-sans'):
-                ui.label('Global Ranking & Location').classes('text-3xl font-bold mb-6 text-[#1a1a1a]')
-                ui.label("Located in New York City, in the heart of Manhattan next to Central Park, the MET is a monumental institution.").classes('text-xl text-gray-700 leading-relaxed mb-4')
-                ui.label("It ranks as one of the world's largest art museums, standing proudly behind other historical giants like The Louvre in Paris, the State Hermitage Museum in St. Petersburg, and the National Museum of China.").classes('text-xl text-gray-700 leading-relaxed')

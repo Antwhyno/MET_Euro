@@ -15,14 +15,43 @@ ui.add_head_html("""
 document.addEventListener('keydown', function(event) {
     if (['Shift', 'Control', 'Alt', 'Meta'].includes(event.key)) return;
     
+    const sections = Array.from(document.querySelectorAll('.page-section'));
+    if (sections.length === 0) return;
+
+    // Calculer la section actuellement affichée (la plus proche du haut de l'écran + offset du header)
+    const headerOffset = 64; // h-16
+    let currentIdx = 0;
+    let minDiff = Infinity;
+    
+    sections.forEach((sec, idx) => {
+        const rect = sec.getBoundingClientRect();
+        const diff = Math.abs(rect.top - headerOffset);
+        if (diff < minDiff) {
+            minDiff = diff;
+            currentIdx = idx;
+        }
+    });
+
+    let targetIdx = currentIdx;
+    
     if (event.key === 'ArrowUp' || event.key === 'PageUp') {
         event.preventDefault();
-        window.scrollBy({ top: -window.innerHeight, behavior: 'smooth' });
+        targetIdx = Math.max(0, currentIdx - 1);
     } else {
         if (event.key === 'ArrowDown' || event.key === 'PageDown' || event.key === ' ') {
             event.preventDefault();
         }
-        window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+        // Pour toute autre touche ou espace/flèche bas, on descend
+        targetIdx = Math.min(sections.length - 1, currentIdx + 1);
+    }
+
+    if (targetIdx !== currentIdx) {
+        const target = sections[targetIdx];
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
     }
 });
 </script>

@@ -2,7 +2,7 @@ from nicegui import ui
 
 def render_history():
     # History Section
-    with ui.column().classes('w-full bg-[#f4f1ea] py-20 px-6 font-sans'):
+    with ui.column().classes('page-section w-full bg-[#f4f1ea] py-20 px-6 font-sans justify-center').style('min-height: calc(100vh - 64px);'):
         with ui.column().classes('max-w-5xl mx-auto w-full').props('id=history'):
             ui.label('History of the Museum').classes('text-4xl font-bold mb-16 text-center w-full uppercase tracking-widest text-[#8b0000] font-serif')
             

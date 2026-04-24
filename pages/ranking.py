@@ -22,8 +22,8 @@ def render_ranking():
     ]
 
     # Full height page
-    with ui.column().classes('w-full items-center justify-center bg-white font-sans').style('height: 100vh; padding: 2rem;'):
-        ui.label('World\\'s Largest Art Museums').classes('text-4xl font-bold mb-10 text-center uppercase tracking-widest text-[#8b0000] font-serif')
+    with ui.column().classes('page-section w-full items-center justify-center bg-white font-sans').style('min-height: calc(100vh - 64px); padding: 2rem;'):
+        ui.label("World's Largest Art Museums").classes('text-4xl font-bold mb-10 text-center uppercase tracking-widest text-[#8b0000] font-serif')
         
         table = ui.table(columns=columns, rows=rows, row_key='name').classes('w-full max-w-5xl shadow-xl rounded-3xl overflow-hidden')
         table.style('font-size: 1.1rem; border-collapse: collapse;')

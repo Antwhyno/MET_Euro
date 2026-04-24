@@ -2,7 +2,7 @@ from nicegui import ui
 
 def render_presentation():
     # Presentation Section
-    with ui.column().classes('w-full max-w-6xl mx-auto py-20 px-6').props('id=presentation'):
+    with ui.column().classes('page-section w-full max-w-6xl mx-auto py-20 px-6 justify-center').style('min-height: calc(100vh - 64px);').props('id=presentation'):
         ui.label('Key Figures').classes('text-4xl font-bold mb-12 text-center w-full uppercase tracking-widest text-[#8b0000]')
         
         with ui.grid(columns=2).classes('w-full gap-8 md:grid-cols-4 lg:grid-cols-4 font-sans'):

@@ -4,6 +4,7 @@ from pages.presentation import render_presentation
 from pages.history import render_history
 from pages.media import render_media
 from pages.ranking import render_ranking
+from pages.artworks import render_artworks
 
 # Configure page
 app.add_static_files('/assets', 'assets')
@@ -79,6 +80,9 @@ render_ranking()
 
 # History Section
 render_history()
+
+# Artworks Section
+render_artworks()
 
 # Media Section             ###
 render_media()

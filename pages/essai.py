@@ -1,3 +1,5 @@
+# c'est jsute un petit assai pour le layout de nicegui
+
 from nicegui import ui
 
 # 1. Je crée une ligne qui prend TOUTE la largeur de l'écran (w-full)

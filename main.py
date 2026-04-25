@@ -1,9 +1,9 @@
 from nicegui import app, ui
-from pages.hero import render_hero
-from pages.presentation import render_presentation
+from pages.premiere import render_hero
+from pages.page_2 import render_presentation
 from pages.history import render_history
-from pages.media import render_media
-from pages.ranking import render_ranking
+from pages.fin import render_media
+from pages.page_3 import render_ranking
 from pages.artworks import render_artworks
 
 # Configure page

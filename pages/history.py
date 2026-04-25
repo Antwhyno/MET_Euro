@@ -2,20 +2,21 @@ from nicegui import ui
 
 def render_history():
     # Custom CSS pour la timeline (agrandir, gras, rouge et ajustement hauteurs)
-    ui.html("""
+    ui.add_head_html("""
     <style>
-    .q-timeline__subtitle {
+    body .q-timeline .q-timeline__entry .q-timeline__subtitle,
+    body .q-timeline__subtitle,
+    body .q-timeline__subtitle span,
+    .q-timeline__subtitle,
+    .q-timeline-entry__subtitle {
         color: #8b0000 !important;
         font-weight: 900 !important;
-        font-size: 1.6rem !important;
+        font-size: 1.8rem !important;
         margin-bottom: 2px !important;
         padding-bottom: 0 !important;
         line-height: 1.1 !important;
         opacity: 1 !important;
-    }
-    .q-timeline__subtitle * {
-        color: #8b0000 !important;
-        font-weight: 900 !important;
+        text-transform: none !important;
     }
     .q-timeline__title {
         margin-top: 2px !important;

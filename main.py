@@ -5,6 +5,7 @@ from pages.history import render_history
 from pages.fin import render_media
 from pages.page_3 import render_ranking
 from pages.artworks import render_artworks
+from pages.masterpieces import render_masterpieces
 
 # Configure page
 app.add_static_files('/assets', 'assets')
@@ -83,6 +84,9 @@ render_history()
 
 # Artworks Section
 render_artworks()
+
+# Masterpieces Section (local images)
+render_masterpieces()
 
 # Media Section             ###
 render_media()

@@ -11,13 +11,13 @@ def render_history():
                 with ui.column().classes('w-full md:w-1/2 flex-1'):
                     with ui.timeline().classes('w-full'):
                         with ui.timeline_entry('1866', title='The Initial Idea', icon='lightbulb', color='red-9').classes('text-xl'):
-                            ui.label("The idea to create a museum came from Paris during a dinner of important American personalities. The most famous among them was the lawyer John Jay, who championed the idea. His vision was to create a national institution and art gallery to educate the American people.").classes('text-gray-800 mt-2')
+                            ui.label("The idea came from **Paris** during a dinner of important American personalities. the lawyer **John Jay**. to create a **national institution** and art gallery to **educate the American people**.").classes('text-gray-800 mt-2')
                         
                         with ui.timeline_entry('April 13, 1870', title='Official Foundation', icon='account_balance', color='red-9').classes('text-xl'):
-                            ui.label("The MET was officially founded. Its very first acquisition was a remarkable Roman sarcophagus, marking the beginning of its vast collection.").classes('text-gray-800 mt-2')
+                            ui.label("The MET was officially founded. Its first acquisition was a **Roman sarcophagus**, marking the beginning of its vast collection.").classes('text-gray-800 mt-2')
                             
                         with ui.timeline_entry('March 30, 1880', title='Moving to Central Park', icon='location_on', color='red-9').classes('text-xl'):
-                            ui.label("The museum expanded and moved to its current iconic location at Fifth Avenue and 82nd Street, next to beautiful Central Park.").classes('text-gray-800 mt-2')
+                            ui.label("The museum expanded and moved to its current iconic location at **Fifth Avenue and 82nd Street**, next to **Central Park**.").classes('text-gray-800 mt-2')
 
                 # Images à droite
                 with ui.column().classes('w-full md:w-5/12 flex flex-col gap-8 items-center justify-center'):

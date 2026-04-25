@@ -1,3 +1,4 @@
+#tableau classement musé du monde
 from nicegui import ui
 
 def render_ranking():
@@ -14,11 +15,7 @@ def render_ranking():
         {'rank': 3, 'name': 'National Museum of China', 'location': 'Beijing, China', 'size': '65,000'},
         {'rank': 4, 'name': 'The Metropolitan Museum of Art', 'location': 'New York City, USA', 'size': '58,820'},
         {'rank': 5, 'name': 'Vatican Museums', 'location': 'Vatican City', 'size': '43,000'},
-        {'rank': 6, 'name': 'Tokyo National Museum', 'location': 'Tokyo, Japan', 'size': '38,000'},
-        {'rank': 7, 'name': 'National Museum of Anthropology', 'location': 'Mexico City, Mexico', 'size': '33,000'},
-        {'rank': 8, 'name': 'Victoria and Albert Museum', 'location': 'London, UK', 'size': '30,658'},
-        {'rank': 9, 'name': 'Art Institute of Chicago', 'location': 'Chicago, USA', 'size': '26,000'},
-        {'rank': 10, 'name': 'British Museum', 'location': 'London, UK', 'size': '25,700'}
+        {'rank': 6, 'name': 'Tokyo National Museum', 'location': 'Tokyo, Japan', 'size': '38,000'}
     ]
 
     # Full height page

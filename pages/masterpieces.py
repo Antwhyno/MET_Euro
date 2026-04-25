@@ -78,7 +78,7 @@ def render_masterpieces():
             with ui.row().classes('w-full max-w-6xl mx-auto px-8 items-center gap-12 z-10').style('position: relative; z-index: 2;'):
                 # Painting image
                 ui.image(piece['image']).style(
-                    'max-height: 65vh; max-width: 45%; object-fit: contain; border-radius: 12px;'
+                    'max-height: 80vh; max-width: 55%; object-fit: contain; border-radius: 12px;'
                     'box-shadow: 0 20px 60px rgba(0,0,0,0.9); flex-shrink: 0;'
                 )
 

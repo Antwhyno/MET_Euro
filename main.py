@@ -61,7 +61,7 @@ document.addEventListener('keydown', function(event) {
 
 # Navigation / Header
 with ui.row().classes('w-full items-center justify-between p-4 bg-white shadow-md fixed z-50 top-0 left-0 right-0'):
-    ui.label('MET Exposition').classes('text-2xl font-bold tracking-widest')
+    ui.label('MET by Antoine').classes('text-2xl font-bold tracking-widest')
     with ui.row().classes('gap-6 hidden md:flex lg:flex'):
         ui.link('Presentation', '#presentation').classes('text-lg text-gray-700 hover:text-red-800 no-underline font-sans')
         ui.link('History', '#history').classes('text-lg text-gray-700 hover:text-red-800 no-underline font-sans')
@@ -93,7 +93,7 @@ render_media()
 
 # Footer
 with ui.row().classes('w-full p-8 bg-[#1a1a1a] text-center justify-center font-sans mt-10'):
-    ui.label('Exposition of the MET • Antoine').classes('text-gray-400')
+    ui.label('presentation of the MET • Antoine').classes('text-gray-400')
 
 # On ajoute le host et le port spécifique pour Hugging Face
-ui.run(title="The MET - Exposition", favicon="🏛️", host="0.0.0.0", port=7860)
+ui.run(title="The MET - by Antoine", favicon="🏛️", host="0.0.0.0", port=7860)
